@@ -18,9 +18,9 @@ class FriendForm extends React.Component{
             <div>
                 <h2>Add Friend</h2>
                 <form>
-                    <input type='text' name='name' placeholder='name'/>
-                    <input type='number' name='age' placeholder='age'/>
-                    <input type='email' name='email' placeholder='email'/>
+                    <input type='text' name='name' placeholder='name' value={this.state.friends.name}/>
+                    <input type='number' name='age' placeholder='age' value={this.state.friends.age}/>
+                    <input type='email' name='email' placeholder='email' value={this.state.friends.email}/>
                     <button>Add Friend</button>
                 </form>
             </div>

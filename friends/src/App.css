@@ -1,0 +1,123 @@
+.App {
+ max-width: 800px;
+
+}
+
+p {
+  font-family: 'Scheherazade', serif;
+  font-size: 1.2rem;
+}
+
+span {
+  font-family: 'Scheherazade', serif;
+  font-size: 1.2rem;
+}
+
+.home-page{
+  /* display: flex; */
+}
+.home-page h1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: 40px;
+  left: 80px;
+  font-family: 'Bangers', cursive;
+  font-size: 2.5rem;
+  color: rgb(196, 153, 12);
+}
+
+.home-btn {
+  display: flex;
+  height: 7vh;
+  width: 11vw;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  position: relative;
+  left: 590px;
+  top: 60px;
+  font-family: 'Ultra', serif;
+  font-size: 1rem;
+  transition: 800ms ease all;
+  outline:none;
+  cursor: pointer;
+  color: rgb(185, 142, 0);
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 2px;
+  text-decoration: none;
+  
+  
+}
+
+.home-btn:hover{
+  background: rgb(255, 230, 147);
+  color: black;
+  border: 0px solid transparent;
+}
+.home-btn:before, .home-btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(185, 142, 0);
+  transition:400ms ease all;
+}
+.home-btn:after{
+  right:inherit;
+  top: 38.5px;
+  left:0;
+  bottom:0;
+}
+.home-btn:hover:before, .home-btn:hover:after{
+  width:100%;
+  transition: 800ms ease all;
+}
+
+.friends-container{
+  width: 100%;
+  display: grid;
+  /* display: flex; */
+  /* border: 1px solid rgb(185, 142, 0); */
+  /* justify-content: center;
+  text-align: center; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  margin-left: 30px;
+  margin-top: 30px;
+
+}
+
+.friends-container .friends{
+  width: 100%;
+  border: 1px solid rgb(185, 142, 0);
+  border-radius: 5px;
+  text-align: center;
+  display: grid;
+  grid-auto-columns: minmax(290px, auto);
+  grid-auto-rows: minmax(70px, auto);
+  justify-items: center;
+  background-image: url('./components/img/overlay.png'), url('./components/img/ancient-antique-art-235985.jpg');
+  background-repeat: repeat, no-repeat;
+	background-size: auto, 100% 100%;
+  background-attachment: fixed;
+  box-shadow: 5px 5px 5px rgba(121, 103, 1, 0.719);
+  
+}
+
+.friends-container .friends p{
+  font-family: 'Concert One', cursive;
+}
+
+.friends-container .friends span{
+  font-family: 'Concert One', cursive;
+}
+
+
+
+
+

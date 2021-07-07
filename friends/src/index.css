@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-size: 62.5%;
+  background-image: url('./components/img/overlay.png'), url('./components/img/adult-backlit-beach-1000445.jpg');
+  background-repeat: repeat, no-repeat;
+	background-size: auto, 100% 100%;
+	background-attachment: fixed;
+  
+}
+
+p {
+  font-family: 'Scheherazade', serif;
+}
+
+span {
+  font-family: 'Scheherazade', serif;
+}
+
